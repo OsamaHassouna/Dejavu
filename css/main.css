@@ -1,5 +1,5 @@
 /* =================== FONTS =================== */
-@font-face {
+/* @font-face {
   font-family: SourceSansPro;
   src: url("../fonts/SourceSansPro-Black.ttf");
   font-weight: 900;
@@ -14,7 +14,7 @@
 @font-face {
   font-family: SourceSansPro;
   src: url("../fonts/SourceSansPro-SemiBold.ttf");
-  font-weight: 500;
+  font-weight: 600;
   font-display: auto;
 }
 @font-face {
@@ -39,9 +39,9 @@
 @font-face {
   font-family: Catamaran;
   src: url("../fonts/Catamaran-SemiBold.ttf");
-  font-weight: 500;
+  font-weight: 600;
   font-display: auto;
-}
+} */
 /* ============== GENERAL ============== */
 .container {
   max-width: 1200px;
@@ -370,7 +370,7 @@ header .navbar-toggler{
   .main-menu li a {
     margin: 0;
     color: #232323;
-    font-weight: 500;
+    font-weight: 600;
   }
   .main-menu {
     background: rgba(255,255,255,0.7);
