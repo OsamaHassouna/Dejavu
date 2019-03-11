@@ -402,6 +402,64 @@ header .navbar-toggler{
   font-family: 'Open sans';
   font-weight: 600;
 }
+/* ------------------------------------------- */
+/* ----- SECTION TWO -----*/
+/* ----- CALL TO ACTION -----*/
+.call-to-action{
+  background-image: url('../images/call-to-action-bg.jpg');
+  background-size: cover;
+  padding: 100px 50px;
+}
+.call-to-action h2{
+  line-height: 1.5;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+/* ------------------------------------------- */
+/* ----- SECTION Three -----*/
+/* ----- SERVICES -----*/
+.section-three{
+  padding: 100px 0;
+}
+.section-three .section-title p{
+  width: 58%;
+}
+.service-block{
+  padding: 50px 35px;
+  text-align: center;
+  max-height: 390px;
+}
+.block-icon{
+  width: 50px;
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #e9213a;
+}
+.service-block h3{
+  font-size: 18px;
+  font-family: 'Catamaran', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #232323;
+}
+.service-block p{
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 0px;
+}
+.service-bg{
+  background-color: #ce1b31;
+}
+.service-bg .block-icon{
+  color: #fff;
+}
+.service-bg h3,
+.service-bg p{
+  color: #fff;
+}
 /* ============== FOOTER ============== */
 
 /* ============== MEDIA ============== */
@@ -409,19 +467,7 @@ header .navbar-toggler{
 @media (min-width: 992px){
 
 }
-@media (max-width: 991px) {
-
-  /* ----- HEADER CONTENT ----- */
-  .header-content{
-    height: auto;
-  }
-  /* ----- NAV ----- */
-  .main-menu{
-    padding: 10px 0;
-  }
-  .main-menu li{
-    padding: 5px 0;
-  }
+@media (max-width: 992px) {
   .main-menu li a {
     margin: 0;
     color: #232323;
@@ -429,7 +475,7 @@ header .navbar-toggler{
     padding: 0;
   }
   .main-menu {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.8);
     margin-top: 20px;
     border-radius: 8px;
   }
@@ -445,12 +491,29 @@ header .navbar-toggler{
     color: #b11226;
   }
 }
+@media (max-width: 991px) {
+
+  /* ----- HEADER CONTENT ----- */
+  .header-content{
+    height: auto;
+  }
+  /* ----- NAV ----- */
+  .main-menu{
+    padding: 10px 0;
+  }
+  .main-menu li{
+    padding: 5px 0;
+  }
+
+}
 @media (max-width: 768px) {
+  .section-content .left-content{
+    margin-bottom: 30px;
+  }
   .about p{
     width: 100%;
   }
 }
-
 @media (max-width: 575px) {
 
 }
