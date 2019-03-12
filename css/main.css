@@ -64,6 +64,7 @@ a {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   -moz-transition: all 0.3s;
+  outline: none;
 }
 a:hover {
   text-decoration: none;
@@ -460,6 +461,184 @@ header .navbar-toggler{
 .service-bg p{
   color: #fff;
 }
+/* ---------------------------------- */
+/* ----- Portfolio ----- */
+.portfolio{
+  padding: 100px 0;
+}
+.portfolio-filter{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio-filter button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  background: #b11226;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.portfolio-items-wrapper .mix{
+  padding: 0 15px;
+}
+.portfolio-block {
+  position: relative;
+  margin-bottom: 30px;
+}
+.portfolio-block:before {
+  transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  content: '';
+}
+.portfolio-block:hover:before {
+  opacity: 1;
+}
+.portfolio-block .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  width: 100%;
+}
+.portfolio-block:hover .caption {
+  opacity: 1;
+  top: 55%;
+}
+
+.portfolio-block .caption .search-icon {
+  background: #b11226;
+  color: #fff;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  margin: 0 auto;
+  padding: 8px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+.portfolio-block .caption h4 a{
+  color: #fff;
+}
+#search-svg{
+  width: 20px;
+}
+/* -------------------------------------- */
+/* ----- Partners ----- */
+.partners{
+  padding: 100px 0;
+}
+/* -------------------------------------- */
+/* ----- TEAM ----- */
+.team{
+  padding: 100px 0;
+  background: #f6f6f6;
+}
+.team-member{
+  padding: 0 15px;
+}
+.member-image{
+  overflow: hidden;
+  position: relative;
+}
+.member-image img{
+  transition: 0.3s all ease-in-out;
+}
+.member-image:hover img{
+  transform: scale(1.1);
+  transition: 0.3s all ease-in-out;
+}
+.member-image:hover .member-caption{
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.team-member .member-caption{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  top: auto;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  background: rgba(227, 40, 40, 0.7);
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  padding: 0;
+  height: 80px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  transition: all .3s ease;
+}
+.team-member .member-caption li {
+  display: inline-block;
+  margin-right: 7px;
+}
+.member-caption li a{
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.member-content{
+  padding: 25px 0;
+  text-align: center;
+  background: #fff;
+}
+.member-content h3{
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #333;
+  font-weight: 600;
+}
+.member-content span{
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #555;
+}
+.team-member .member-content p{
+  margin-top: 10px;
+  font-size: 16px;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+.team-member{
+  padding: 0 15px;
+}
+#facebook-svg,
+#twitter-svg,
+#dribble-svg{
+  /* width: 20px; */
+  height: 20px;
+}
 /* ============== FOOTER ============== */
 
 /* ============== MEDIA ============== */
@@ -512,6 +691,9 @@ header .navbar-toggler{
   }
   .about p{
     width: 100%;
+  }
+  .portfolio-filter button{
+    margin-bottom: 20px;
   }
 }
 @media (max-width: 575px) {
