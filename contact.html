@@ -774,13 +774,9 @@
     <!-- =================== MIXITUP =====================-->
     <script type='text/javascript' src='vendor/mixitup/mixitup.min.js'></script>
     <script>
-        var portfolio_item = $('.portfolio');
+        var portfolio_item = $('.portfolio-items-wrapper');
         if (portfolio_item.length) {
-            var mixer = mixitup(portfolio_item, {
-                controls:{
-                    scope: 'local'
-                }
-            });
+            var mixer = mixitup(portfolio_item);
         };
     </script>
     <!-- =================== SLICK =====================-->
