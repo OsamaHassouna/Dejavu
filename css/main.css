@@ -115,6 +115,25 @@ img {
   width: 80px;
   background: #b11226;
 }
+/* ----- SLICK DOTS ------ */
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.slick-dots li button {
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  border: none;
+  border-radius: 100%;
+  background-color: #dedede;
+  text-indent: -9999px;
+  margin: 0 5px;
+}
+.slick-dots .slick-active button {
+  background-color: #b11226;
+}
 /* -------- Pre Loader -------- */
 .animsition-loading-1 {
   position: absolute;
@@ -465,6 +484,7 @@ header .navbar-toggler{
 /* ----- Portfolio ----- */
 .portfolio{
   padding: 100px 0;
+  background: #f6f6f6;
 }
 .portfolio-filter{
   text-align: center;
@@ -542,12 +562,13 @@ header .navbar-toggler{
 /* ----- Partners ----- */
 .partners{
   padding: 100px 0;
+  background: #f6f6f6;
 }
 /* -------------------------------------- */
 /* ----- TEAM ----- */
 .team{
   padding: 100px 0;
-  background: #f6f6f6;
+  /* background: #f6f6f6; */
 }
 .team-member{
   padding: 0 15px;
@@ -639,6 +660,59 @@ header .navbar-toggler{
   /* width: 20px; */
   height: 20px;
 }
+/* ----------------------------------- */
+/* ----- TESTIMONIALS ----- */
+.testimonials{
+  padding-top: 100px;
+  background: #b11226;
+  position: relative;
+  padding-bottom: 0px;
+  margin-bottom: 100px;
+}
+.testimonials:before{
+  content: "";
+  /* display: block; */
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0;
+  height: 250px;
+  background-color: #fefefe;
+}
+.testimonials-icon {
+  width: 80px;
+  color: #fff;
+  margin-bottom: 50px;
+  display: inline-block;
+  line-height: 1;
+}
+.client-speech{
+  margin-bottom: 30px;
+}
+.client-speech p{
+  font-size: 17px;
+  color: #fff;
+  padding: 0 10%;
+}
+.client-thumb{
+  margin-bottom: 20px;
+}
+.client-thumb img{
+  display: inline-block;
+  border-radius: 100%;
+  width: 150px;
+  height: auto;
+}
+.client-details h3{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 600;
+  color: #232323;
+}
+.client-details span{
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 400;
+  color: #232323;
+}
 /* ============== FOOTER ============== */
 
 /* ============== MEDIA ============== */
@@ -697,7 +771,9 @@ header .navbar-toggler{
   }
 }
 @media (max-width: 575px) {
-
+  .section-title p{
+    width: 70%;
+  }
 }
 @media (max-width: 420px){
   .btn-list{

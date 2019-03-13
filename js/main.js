@@ -72,6 +72,15 @@
             }
         ]
     });
+    $('.slick2').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: false,
+        dots: true
+    });
 
     /* ----- STICKY HEADER ----- */
     $(window).scroll(function(){
