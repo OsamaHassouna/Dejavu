@@ -164,7 +164,6 @@ img {
   border-radius: 100%;
   background-color: #e87528;
 }
-
 @-webkit-keyframes ball-scale {
   0% {
     -webkit-transform: scale(0.1);
@@ -547,7 +546,6 @@ header .navbar-toggler{
   opacity: 1;
   top: 55%;
 }
-
 .portfolio-block .caption .search-icon {
   background: #b11226;
   color: #fff;
@@ -577,7 +575,6 @@ header .navbar-toggler{
 /* ----- TEAM ----- */
 .team{
   padding: 100px 0;
-  /* background: #f6f6f6; */
 }
 .team-member{
   padding: 0 15px;
@@ -666,7 +663,6 @@ header .navbar-toggler{
 #facebook-svg,
 #twitter-svg,
 #dribble-svg{
-  /* width: 20px; */
   height: 20px;
 }
 /* ----------------------------------- */
@@ -680,7 +676,6 @@ header .navbar-toggler{
 }
 .testimonials:before{
   content: "";
-  /* display: block; */
   position: absolute;
   left: 0%;
   right: 0%;
@@ -730,11 +725,9 @@ header .navbar-toggler{
 /* ----- INFO BLOCK ----- */
 .footer-logo{
   width: 120px;
-  /* margin: 0 auto; */
   margin-bottom: 20px;
 }
 .footer-about{
-  /* text-align: center; */
   font-size: 14px;
   color: #bdbdbd;
   font-weight: 300;
@@ -811,7 +804,6 @@ header .navbar-toggler{
 .footer-socialmedia{
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   flex-wrap: wrap;
 }
 .footer-socialmedia li{
@@ -925,9 +917,6 @@ header .navbar-toggler{
 }
 /* ============== MEDIA ============== */
 /* -------- 1200 * 991 * 768 * 575  -------- */
-@media (min-width: 992px){
-
-}
 @media (max-width: 992px) {
   .main-menu li a {
     margin: 0;
@@ -951,7 +940,6 @@ header .navbar-toggler{
   .sticky-header .main-menu li a:hover{
     color: #b11226;
   }
-
   .footer-socialmedia li{
     margin-bottom: 20px;
   }
@@ -966,7 +954,6 @@ header .navbar-toggler{
   }
 }
 @media (max-width: 991px) {
-
   /* ----- HEADER CONTENT ----- */
   .header-content{
     height: auto;
