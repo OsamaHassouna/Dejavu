@@ -982,6 +982,12 @@ header .navbar-toggler{
   .portfolio-filter button{
     margin-bottom: 20px;
   }
+  .footer-top .services-block,
+  .footer-top .quickLinks-block,
+  .footer-top .socialmedia-block{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 @media (max-width: 575px) {
   .section-title p{
