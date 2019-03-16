@@ -30,6 +30,7 @@
     $('.slick').slick({
         slidesToShow: 5,
         slidesToScroll: 2,
+        dots: true,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 3000,
