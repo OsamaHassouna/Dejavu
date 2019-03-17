@@ -489,7 +489,7 @@ header .navbar-toggler{
   margin: 0 auto;
 }
 .about-gallery .slick-dots{
-  display: none;
+  display: none !important;
 }
 /* ------------------------------------------- */
 /* ============== Call To Action ============== */
