@@ -103,7 +103,9 @@ img {
   text-transform: uppercase;
 }
 .btn-one:hover{
-  opacity: 0.6;
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent;
 }
 .btn-two{
   padding: 12px 40px;
@@ -113,6 +115,11 @@ img {
   font-size: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+.btn-two:hover {
+  color: #fff;
+  background: #b11226;
+  border-color: transparent;
 }
 .h-line{
   height: 2px;
@@ -455,7 +462,7 @@ header .navbar-toggler{
 /* ----- About Info 2 ----- */
 .about-info-2{
   background-color: #f9f9f9;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 .about-info-2 h3 {
   font-size: 24px;
@@ -470,7 +477,7 @@ header .navbar-toggler{
 }
 /* ----- About Gallery ----- */
 .about-gallery{
-  padding: 80px 0;
+  padding: 100px 0;
 }
 .about-gallery-title{
   text-align: center;
@@ -491,12 +498,17 @@ header .navbar-toggler{
 .about-gallery .slick-dots{
   display: none !important;
 }
+/* ----- about-call-to-action ----- */
+.about-call-to-action .btn-one{
+  margin-top: 20px;
+}
 /* ------------------------------------------- */
 /* ============== Call To Action ============== */
 .call-to-action{
   background-image: url('../images/call-to-action-bg.jpg');
   background-size: cover;
   padding: 100px 50px;
+  text-align: center;
 }
 .call-to-action h2{
   line-height: 1.5;
@@ -776,6 +788,143 @@ header .navbar-toggler{
   font-weight: 400;
   color: #232323;
 }
+/* ============== Contact Us ============== */
+.contact-us{
+  padding: 100px 0;
+}
+.contact-gmap{
+  margin-bottom: 40px;
+}
+#map {
+  width: 100%;
+  height: 600px;
+  /* background-color: grey; */
+}
+.contact-details h3{
+  font-size: 24px;
+  font-family: 'Catamaran',sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact-details p{
+  color: #848484;
+  font-size: 16px;
+}
+.contact-short-info{
+  padding: 20px 0px;
+}
+.contact-short-info li{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.contact-short-info li > div{
+  color: #232323;
+}
+.contact-short-info .info-text p{
+  font-size: 14px;
+  color: #232323;
+}
+.contact-short-info .info-icon{
+  width: 10px;
+}
+.contact-socialmedia{
+  position: relative;
+  display: flex;
+  align-content: center;
+}
+.contact-socialmedia::before{
+  display: none;
+  content: '';
+  position: absolute;
+  background: #000;
+  width: 70%;
+  height: 1px;
+  left: 0;
+  top: 0;
+}
+.contact-socialmedia li{
+  padding: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.contact-socialmedia li a {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.contact-socialmedia svg{
+  width: 20px;
+  height: 20px;
+  color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.contact-socialmedia li a:hover{
+  border-color: #b11226;
+  background-color: #b11226;
+}
+.contact-socialmedia li a:hover svg{
+  color: #fff;
+}
+/* ----- Contact Form ----- */
+.form-group {
+  margin-bottom: 15px;
+}
+.contact-form input:hover,
+.contact-form textarea:hover,
+.contact-form #contact-submit:hover {
+  border-color: #b11226;
+}
+.contact-form .form-control {
+  background-color: transparent;
+  border: 1px solid #dedede;
+  box-shadow: none;
+  height: 45px !important;
+  color: #0c0c0c;
+  height: 38px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  border-radius: 0;
+}
+.contact-form textarea.form-control {
+  resize: none;
+  padding: 10px;
+  height: 120px !important;
+  outline: none;
+}
+.email-success {
+  display: none;
+  background-color: #6cb670;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.email-error {
+  display: none;
+  padding: 10px;
+  color: #D8000C;
+  border-radius: 4px;
+  font-size: 13px;
+  background-color: #FFBABA;
+  margin-bottom: 10px;
+}
+.contact-form .contact-submit{
+  border: none;
+  padding: 15px 0;
+  width: 100%;
+  margin: 0;
+  background: #b11226;
+  color: #fff;
+  border-radius: 0;
+  cursor: pointer;
+}
 /* ============== NEWSLETTER ============== */
 .newsletter{
   padding: 50px 0;
@@ -796,7 +945,7 @@ header .navbar-toggler{
   outline: none;
   padding: 10px;
   margin-right: 10px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 .block-newsletter input::placeholder{
   color: #999;
@@ -1014,6 +1163,10 @@ header .navbar-toggler{
   }
   .about-info-2-left{
     margin-bottom: 30px;
+  }
+  /*Contact us sections*/
+  .contact-details{
+    margin-bottom: 20px;
   }
   .footer-top .services-block,
   .footer-top .quickLinks-block,
